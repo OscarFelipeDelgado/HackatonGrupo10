@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#game-container {
+    display: flex;
+    flex-direction: row;
+}
+
+img #pasto{
+    grid-area: pasto;
+    padding: 0;
+    margin: 0;
+}
+#pasto img{
+    width: 20vw;
+    height: 88vh;
+    padding: 0;
+    margin: 0;
+    transform: rotate(180deg);
+}
+#rio img{
+    width: 20vw;
+    height: 88vh;
+    transform: rotate(180deg);
+}
+#game {
+    grid-area: game;
+    position: relative;
+    width: 85vw;
+    height: 88vh;
+    border: 1px solid black;
+    overflow: hidden;
+    background-image: url(carretera123.jpg);
+    background-repeat:repeat;
+    background-size: 30vw;
+}
+#player img{
+    position: absolute;
+    z-index: 6;
+    top: 280px;
+    left: 380px;
+    width: 3vw;
+}
+
+#computer img{
+    position: absolute;
+    z-index: 1;
+    top: 280px;
+    left: 20px;
+    width: 6vw;
+    transform: rotate(90deg);
+}
+#goal {
+    height: 20px;
+}
+#goal img{
+    position: relative;
+    z-index: 1;
+    top: 50px;
+    width: 80vw;
+}
+.obstacle {
+    position: absolute;
+    z-index: 3;
+    width: 3vw;
+    height: 7vw;
+}
+.obstacle img {
+    width: 3vw;
+    height: 7vw;
+}
+#pause {
+    grid-area: pause;
+    font-size: 2vw;
+    height: 10vh;
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+#carretera123{
+    position: relative;
+    z-index: 0;
+    width: 29vw;
+    height: 100vh;
+}
+
